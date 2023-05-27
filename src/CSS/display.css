@@ -1,8 +1,9 @@
 .display {
     display: grid;
-    grid-template-columns: repeat(5, 88px);
+    grid-template-columns: repeat(5, 82px);
     align-items: center;
     justify-items: center;
+    justify-content: center;
 
     list-style: none;
 }
@@ -10,7 +11,7 @@
 .display li {
     height: 78px;
     width: 78px;
-    margin: 5px 5px;
+    margin-top: 4px;
 
     border: 0.4em solid #4C4347;
     border-radius: 10%;

@@ -1,0 +1,27 @@
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 2% 20%;
+
+    text-transform: uppercase;
+}
+.keyboard__key {
+    height: 78px;
+    width: 78px;
+
+    outline: none;
+    background-color: #4C4347;
+    display: flex;
+    font-size: 2em;
+    line-height: 2em;
+    margin: 4px 4px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8%;
+    font-weight: 500;
+    font-family: 'Mitr', sans-serif;
+    cursor: pointer;
+    border: none;
+    color: #FAFAFF;
+}
