@@ -1,5 +1,6 @@
 * {
     padding: 0;
+    touch-action: manipulation;
     margin: 0;
     outline: none;
 }
@@ -11,16 +12,28 @@
 :root{
     --max-size: 720px;
     --kbd-height: min(100em/2.15,25vh);
+    --inset: env(safe-area-inset-top);
+}
+html{
+	background-color: #6e5c62;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	max-width: var(--max-size);
+	-webkit-text-size-adjust: 100%;
 }
 body {
-    background-color: #6e5c62;
     font-family: 'Mitr', sans-serif;
-    width: 100%;
-    height: 100%;
     font-weight: 600;
+    height: calc(100% - var(--inset));
     display: flex;
     flex-direction: column;
+	margin-top: var(--inset);
     user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    width: 100%;
+	margin: 0;
 }
 h1 {
     text-align: center;
@@ -39,6 +52,7 @@ h1 {
     justify-items: center;
     justify-content: center;
     margin: 0;
+	width: 100%;
 
     list-style: none;
     transform: translateY(10%);

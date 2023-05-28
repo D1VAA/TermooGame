@@ -95,3 +95,19 @@ keys.addEventListener('click', event => {
         } 
     }
 })
+
+var wordToVerify = [];
+const enterKey = document.querySelector('.ENTER');
+enterKey.addEventListener('click', event => {
+	const getWord = document.querySelectorAll('.active');
+    getWord.forEach(value => {
+        wordToVerify.push(value.textContent);
+    })
+    $.ajax({
+        url: "verify_word.py",
+        type: "POST",
+        succes: function(response){
+            console.log(response);
+        }
+    })
+})
