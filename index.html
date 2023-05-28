@@ -9,12 +9,23 @@
     <link rel="stylesheet" href="./src/CSS/keyboard.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--Fontes-->
-    <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet"> <!--Fontes-->
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <!--Fontes-->
+    <link rel="shortcut icon" href="https://term.ooo/icon.png">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script> 
+    <title>Termo Clone</title>
 </head>
 <body>
+    <h1>Termo</h1>
     <ul class="display"></ul>
     <ul class="keyboard"></ul>
 <script src="./src/main.js"></script>
+<py-config>
+    terminal = false
+    [splashscreen]
+    enabled = false
+</py-config>
+<py-script src="./main.py">
+</py-script>
 </body>
 </html>
